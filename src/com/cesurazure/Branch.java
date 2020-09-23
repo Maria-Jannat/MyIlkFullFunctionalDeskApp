@@ -124,7 +124,7 @@ public class Branch extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(51, 51, 51));
         jLabel4.setText("Address");
 
-        jTextField2.setPreferredSize(new java.awt.Dimension(84, 23));
+        jTextField2.setPreferredSize(new java.awt.Dimension(358, 23));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -148,22 +148,27 @@ public class Branch extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Search");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton3.setBackground(new java.awt.Color(0, 0, 51));
         jButton3.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Submit");
-        jButton3.setPreferredSize(new java.awt.Dimension(120, 28));
+        jButton3.setPreferredSize(new java.awt.Dimension(120, 30));
 
         jComboBox1.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Please Select:", " " }));
-        jComboBox1.setPreferredSize(new java.awt.Dimension(94, 23));
+        jComboBox1.setPreferredSize(new java.awt.Dimension(358, 23));
 
         jLabel6.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(51, 51, 51));
         jLabel6.setText("Institute");
 
-        jTextField3.setPreferredSize(new java.awt.Dimension(84, 23));
+        jTextField3.setPreferredSize(new java.awt.Dimension(358, 23));
 
         jLabel7.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(51, 51, 51));
@@ -171,21 +176,21 @@ public class Branch extends javax.swing.JFrame {
 
         jComboBox2.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Please Select:", " " }));
-        jComboBox2.setPreferredSize(new java.awt.Dimension(94, 23));
+        jComboBox2.setPreferredSize(new java.awt.Dimension(358, 23));
 
         jLabel8.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(51, 51, 51));
         jLabel8.setText("Established");
 
-        jTextField4.setPreferredSize(new java.awt.Dimension(84, 23));
+        jTextField4.setPreferredSize(new java.awt.Dimension(358, 23));
 
         jLabel9.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(51, 51, 51));
         jLabel9.setText("Email");
 
-        jTextField5.setPreferredSize(new java.awt.Dimension(84, 23));
+        jTextField5.setPreferredSize(new java.awt.Dimension(358, 23));
 
-        jTextField6.setPreferredSize(new java.awt.Dimension(84, 23));
+        jTextField6.setPreferredSize(new java.awt.Dimension(358, 23));
 
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
@@ -201,7 +206,7 @@ public class Branch extends javax.swing.JFrame {
 
         jLabel12.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel12.setText("Rmark");
+        jLabel12.setText("Note");
 
         javax.swing.GroupLayout formContainerLayout = new javax.swing.GroupLayout(formContainer);
         formContainer.setLayout(formContainerLayout);
@@ -210,9 +215,7 @@ public class Branch extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formContainerLayout.createSequentialGroup()
                 .addGap(44, 44, 44)
                 .addGroup(formContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(formContainerLayout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jLabel1)
                     .addGroup(formContainerLayout.createSequentialGroup()
                         .addGroup(formContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
@@ -226,30 +229,29 @@ public class Branch extends javax.swing.JFrame {
                             .addComponent(jLabel10)
                             .addComponent(jLabel11)
                             .addComponent(jLabel12))
-                        .addGap(65, 65, 65)
-                        .addGroup(formContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(formContainerLayout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addGroup(formContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formContainerLayout.createSequentialGroup()
                                 .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton1))
-                            .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jScrollPane1)
-                            .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 337, Short.MAX_VALUE)
+                            .addComponent(jComboBox1, 0, 1, Short.MAX_VALUE)
+                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                            .addComponent(jComboBox2, 0, 1, Short.MAX_VALUE)
+                            .addComponent(jScrollPane3)
+                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
                             .addGroup(formContainerLayout.createSequentialGroup()
                                 .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jScrollPane3))))
-                .addGap(51, 51, 51))
+                                .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane1))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formContainerLayout.createSequentialGroup()
                 .addGap(247, 247, 247)
-                .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
                 .addGap(174, 174, 174))
         );
         formContainerLayout.setVerticalGroup(
@@ -367,8 +369,8 @@ public class Branch extends javax.swing.JFrame {
                 .addGap(104, 104, 104)
                 .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(77, 77, 77))
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(131, 131, 131))
         );
         rightComponantLayout.setVerticalGroup(
             rightComponantLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -390,10 +392,10 @@ public class Branch extends javax.swing.JFrame {
         background.setLayout(backgroundLayout);
         backgroundLayout.setHorizontalGroup(
             backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(footer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(header, javax.swing.GroupLayout.DEFAULT_SIZE, 1052, Short.MAX_VALUE)
+            .addComponent(footer, javax.swing.GroupLayout.DEFAULT_SIZE, 1052, Short.MAX_VALUE)
             .addGroup(backgroundLayout.createSequentialGroup()
-                .addComponent(formContainer, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE)
+                .addComponent(formContainer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(rightComponant, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -404,7 +406,7 @@ public class Branch extends javax.swing.JFrame {
                 .addGap(1, 1, 1)
                 .addGroup(backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(rightComponant, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(formContainer, javax.swing.GroupLayout.DEFAULT_SIZE, 507, Short.MAX_VALUE))
+                    .addComponent(formContainer, javax.swing.GroupLayout.DEFAULT_SIZE, 513, Short.MAX_VALUE))
                 .addGap(1, 1, 1)
                 .addComponent(footer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -422,6 +424,10 @@ public class Branch extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
